@@ -1,0 +1,30 @@
+* {
+  margin: 0;
+  font-family: Arial;
+  box-sizing: border-box;
+}
+
+.navbar {
+  display: flex;
+  height: 70px;
+  background-color: #0f1111;
+  color: white;
+}
+
+.nav-logo {
+  height: 70px;
+  width: 100px;
+}
+
+.logo {
+  background-image: url("ShopCity.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 70px; /* Increase the height */
+  width: 200px; /* Increase the width */
+}
+
+.border {
+  border: 2px solid transparent;
+}
