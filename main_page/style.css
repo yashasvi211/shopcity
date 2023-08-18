@@ -1,0 +1,91 @@
+ * {
+     margin: 0;
+     font-family: Arial;
+     box-sizing: border-box;
+ }
+
+ body { 
+     background-color: #0e1010f5;
+ }
+
+ .navbar {
+     display: flex;
+     align-items: center;
+     /* Center vertically */
+     height: 70px;
+     background-color: #0f1111d7;
+     color: white;
+ }
+
+ .logo {
+     background-image: url("ShopCity.png");
+     background-size: cover;
+     background-repeat: no-repeat;
+     background-position: center;
+     height: 70px;
+     /* Increase the height */
+     width: 200px;
+     /* Increase the width */
+ }
+
+ .search {
+     flex: 1;
+     /* Take up remaining space */
+     display: flex;
+     /* Set display to flex */
+     align-items: center;
+     /* Center the text vertically */
+     padding: 20%;
+     margin: 0 auto;
+     /* Center horizontally */
+
+     border-radius: 15px;
+     /* Add rounded corners */
+
+ }
+
+ .search input {
+     flex: 1;
+     /* Take up remaining space */
+     padding: 10px;
+     border: none;
+     outline: none;
+     border-radius: 15px;
+     /* Add rounded corners to the input */
+     background-color: rgba(83, 99, 118, 0.377);
+     /* Set the background color to light gray */
+     color: white;
+     /* Set the text color to white */
+
+ }
+
+ .login-button {
+     background-color: #438d66;
+     color: white;
+     padding: 10px 20px;
+     border: none;
+     border-radius: 20px;
+     cursor: pointer;
+     font-size: 14px;
+     margin-left: 12px;
+     margin-right: 12px;
+ }
+
+ .orders-button {
+     background-color:  #438d66;
+     color: white;
+     padding: 10px 20px;    
+     border: none;
+     border-radius: 20px;
+     cursor: pointer;
+     font-size: 14px;   
+     margin-left: 12px;
+     margin-right: 5px;
+ }
+ #show{
+    margin-top:3%;
+    margin-left: 10%;
+    margin-right: 10%;
+    padding-bottom: 20%;
+    background-color: #333539e6;
+ }
