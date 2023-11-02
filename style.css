@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 @import url("https://fonts.googleapis.com/css?family=Lato:400,700");
 
 :root {
@@ -20,7 +19,7 @@ body {
   background: var(--mainWhite);
   font-family: "Lato", sans-serif;
 }
-/* --------------- Navbar ---------------- */
+/*   Navbar */
 .navbar {
   position: sticky;
   top: 0;
@@ -56,44 +55,9 @@ body {
   border-radius: 30%;
   color: var(--mainWhite);
 }
-/* --------------- End of Navbar ---------------- */
-/* --------------- Hero ---------------- */
-.hero {
-  min-height: calc(100vh - 60px);
-  background: url("../images/hero-bcg.jpeg") center/cover no-repeat;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-.banner {
-  text-align: center;
-  background: rgba(255, 255, 255, 0.8);
-  display: inline-block;
-  padding: 2rem;
-}
-.banner-title {
-  font-size: 3.4rem;
-  text-transform: uppercase;
-  letter-spacing: var(--mainSpacing);
-  margin-bottom: 3rem;
-}
-.banner-btn {
-  padding: 1rem 3rem;
-  text-transform: uppercase;
-  letter-spacing: var(--mainSpacing);
-  font-size: 1rem;
-  background: var(--primaryColor);
-  color: var(--mainBlack);
-  border: 1px solid var(--primaryColor);
-  transition: var(--mainTransition);
-  cursor: pointer;
-}
-.banner-btn:hover {
-  background: transparent;
-  color: var(--primaryColor);
-}
-/* --------------- End of Hero ---------------- */
-/* --------------- Products ---------------- */
+/*  End of Navbar  */
+ 
+/*   Products  */
 
 .products {
   padding: 4rem 0;
@@ -166,8 +130,8 @@ body {
   text-align: center;
 }
 
-/* ---------------End of Products ---------------- */
-/* --------------- Cart ---------------- */
+/* End of Products  */
+/*  Cart  */
 .cart-overlay {
   position: fixed;
   top: 0;
@@ -248,7 +212,7 @@ body {
   color: var(--primaryColor);
   cursor: pointer;
 }
-/*---------- End of Cart Item -------------------- */
+/* End of Cart Item   */
 
 .cart-footer {
   margin-top: 2rem;
@@ -260,6 +224,5 @@ body {
   margin-bottom: 1rem;
 }
 
-/* --------------- End of Cart ---------------- */
-=======
->>>>>>> bd2560fb3ee71fd9862f5392a250b5089b1bf0e1
+/* End of Cart  */
+ 
