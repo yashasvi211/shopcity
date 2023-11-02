@@ -8,7 +8,7 @@
   --mainSpacing: 0.1rem;
   --mainTransition: all 0.3s linear;
 }
-
+ 
 * {
   margin: 0;
   padding: 0;
@@ -148,7 +148,7 @@ body {
 .section-title h2 {
   text-align: center;
   font-size: 2.5rem;
-  margin-bottom: 5rem;
+  margin-bottom: 3rem;
   text-transform: capitalize;
   letter-spacing: var(--mainSpacing);
 }
@@ -191,9 +191,11 @@ body {
 .product-img {
   display: block;
   width: 100%;
-  min-height: 12rem;
-  transition: var(--mainTransition);
+  height: auto;
+  object-fit: contain; /* Ensure the entire image fits within the container */
 }
+
+
 .img-container:hover .product-img {
   opacity: 0.5;
 }
