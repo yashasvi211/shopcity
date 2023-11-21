@@ -47,6 +47,10 @@ $result = mysqli_query($con, $sql);
               </button>
             </div>
           </div>
+          <div class="nav-signin">
+            <a href="login.html" class="btn">Login</a>
+          </div>
+
         </div>
       </div>
       <div class="cart-btn">
