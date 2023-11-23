@@ -31,6 +31,11 @@ $result = mysqli_query($con, $sql);
 
   <title>ShopCity</title>
 </head>
+<style>
+  /* #admin {
+    margin-left: 10px;
+  } */
+</style>
 
 <body>
   <nav class="navbar">
@@ -45,7 +50,9 @@ $result = mysqli_query($con, $sql);
               <button class="btn btn-primary">
                 <span id="textforsearch">Search</span>
               </button>
+
             </div>
+
           </div>
         </div>
       </div>
@@ -56,6 +63,8 @@ $result = mysqli_query($con, $sql);
         <div class="cart-items">0</div>
       </div>
     </div>
+    <a id="admin" href="admin/admin.html"><span id="admin">Admin</span></a>
+    <!-- <button id="admin" onclick="toadmin()><Span id=" admin">Admin</Span></button> -->
   </nav>
 
   <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
@@ -85,7 +94,6 @@ $result = mysqli_query($con, $sql);
     </a>
   </div>
 
-  <!-- products section -->
   <section class="products">
     <div class="section-title">
       <h2>Best of Our Products</h2>
@@ -118,9 +126,6 @@ $result = mysqli_query($con, $sql);
   </section>
 
 
-  <!-- end of products section -->
-
-  <!-- cart -->
   <div class="cart-overlay">
     <div class="cart">
       <span class="close-cart">
@@ -128,11 +133,7 @@ $result = mysqli_query($con, $sql);
       </span>
       <h2>your cart</h2>
       <div class="cart-content">
-        <!-- cart item -->
-        <!-- <div class="cart-item">
-                    
-                </div> -->
-        <!-- end of cart item -->
+
       </div>
       <div class="cart-footer">
         <h3>your total:₹<span class="cart-total">0</span></h3>
@@ -140,9 +141,11 @@ $result = mysqli_query($con, $sql);
       </div>
     </div>
   </div>
-  <!-- end of cart -->
-
-  <!-- Include your script tags and other dependencies -->
+  <script>
+    function toadmin() {
+      window.location.href = 'admin/admin.html';
+    }
+  </script>
   <script src="js/app.js"></script>
   <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
     integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
