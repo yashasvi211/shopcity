@@ -12,7 +12,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $name = $_POST["name"];
     $address = $_POST["address"];
     $phone = $_POST["phone"];
-    $email = $_POST["email"];
+    $email = $_POST["email"]; //this done by ashu
     $password = password_hash($_POST["password"], PASSWORD_DEFAULT);
 
     // Insert user data into the database
