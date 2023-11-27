@@ -1,13 +1,13 @@
 <?php
 $con = mysqli_connect('localhost', 'root', '', 'shopcity');
 
-// Check connection
+
 if (mysqli_connect_errno()) {
   echo "Failed to connect to MySQL: " . mysqli_connect_error();
   exit();
 }
-
-$sql = "SELECT * FROM products";
+session_start();
+$sql = "SELECT * FROM product";
 $result = mysqli_query($con, $sql);
 ?>
 
@@ -17,24 +17,24 @@ $result = mysqli_query($con, $sql);
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <!-- Bootstrap CSS -->
+
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
     integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous" />
-  <!-- MDB CSS -->
+  <!-- MDB CsS -->
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap">
   <link rel="stylesheet" href="node_modules/mdbootstrap/css/bootstrap.min.css">
   <link rel="stylesheet" href="node_modules/mdbootstrap/css/mdb.min.css">
   <link rel="stylesheet" href="node_modules/mdbootstrap/css/style.css">
   <link rel="stylesheet" href="css/styles.css" />
-  <link rel="stylesheet" media="screen" href="css/style2.css">
+
 
   <title>ShopCity</title>
 </head>
 <style>
   /* #admin {
-    margin-left: 10px;
-  } */
+        margin-left: 10px;
+      } */
 </style>
 
 <body>
@@ -63,7 +63,7 @@ $result = mysqli_query($con, $sql);
         <div class="cart-items">0</div>
       </div>
     </div>
-    <a id="admin" href="admin/admin.html"><span id="admin">Admin</span></a>
+    <!-- <a id="admin" href="admin/admin.html"><span id="admin">Admin</span></a> -->
     <!-- <button id="admin" onclick="toadmin()><Span id=" admin">Admin</Span></button> -->
   </nav>
 
@@ -104,13 +104,14 @@ $result = mysqli_query($con, $sql);
         ?>
         <article class="product" id="thisistheway">
           <div class="img-container">
-            <a href="detail.html">
+            <a href="detail.php?product_id=<?= $product["product_id"]; ?>">
               <img src="<?= $product["image"]; ?>" alt="Product image" class="product-img">
             </a>
-            <button class="bag-btn" data-id="<?= $product["id"]; ?>">
-              <i class="fas fa-shopping-cart"></i> add to cart
-            </button>
+            <!-- <button class="bag-btn" data-id="<?= $product["product_id"]; ?>">
+                <i class="fas fa-shopping-cart"></i> add to cart
+              </button> -->
           </div>
+
           <h3 class="product-title">
             <?= $product["title"]; ?>
           </h3>
@@ -118,10 +119,10 @@ $result = mysqli_query($con, $sql);
             <?= $product["price"]; ?>
           </h4>
         </article>
-
         <?php
       }
       ?>
+
     </div>
   </section>
 
